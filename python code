@@ -65,7 +65,7 @@ if __name__ == "__main__":
     geojson_data = arcgis_to_geojson(arcgis_data, layer_name="LULC")
 
      # Save to GeoJSON file
-    with open("result/LULC.geojson", "w") as f:          # or ("output/LULC.json", "r") based on the name of folder you want to save GeoJSON data
+    with open("result/LULC.geojson", "w") as f:        # or ("output/LULC.json", "r") based on the name of folder you want to save GeoJSON data
         json.dump(geojson_data, f, indent=2)
     
     print("Conversion complete!")
